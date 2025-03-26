@@ -1,7 +1,5 @@
 ﻿//opracować program, który wykonuje cztery podstawowe operacje arytmetyczne, wartości
 //argumentów mają być wprowadzane za pomocą pól tekstowych.
-
-
 using System.Windows.Forms;
 
 namespace Zadanie_02
