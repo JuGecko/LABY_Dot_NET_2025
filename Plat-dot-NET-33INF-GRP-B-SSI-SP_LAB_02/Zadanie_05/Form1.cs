@@ -5,7 +5,6 @@ namespace Zadanie_05
         public Form1()
         {
             InitializeComponent();
-            // Event handlers
             buttonAdd.Click += buttonAdd_Click;
             buttonRemove.Click += buttonRemove_Click;
             buttonClear.Click += buttonClear_Click;
