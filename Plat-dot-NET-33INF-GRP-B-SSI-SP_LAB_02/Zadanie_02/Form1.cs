@@ -68,8 +68,8 @@ namespace Zadanie_02
             }
             else
             {
-                result_textBox.Text = ""; // Clear result if input is invalid
-                textBoxBinary.Text = ""; // Clear binary result
+                result_textBox.Text = "";
+                textBoxBinary.Text = "";
                 textBoxHexadecimal.Text = "";
                 textBoxOctadecimal.Text = "";
             }
@@ -77,7 +77,7 @@ namespace Zadanie_02
         }
         private string ConvertToBinary(int number)
         {
-            return Convert.ToString(number, 2); // Convert to binary string
+            return Convert.ToString(number, 2);
         }
 
         private string ConvertToHex(int number)
@@ -91,10 +91,8 @@ namespace Zadanie_02
         }
 
 
-
         private TextBox textBox1;
         private TextBox textBox2;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private ComboBox operationChoice;
 
 

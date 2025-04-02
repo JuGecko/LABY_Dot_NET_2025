@@ -32,7 +32,6 @@ namespace Zadanie_02
         {
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             operationChoice = new ComboBox();
             result_textBox = new TextBox();
             rowna_sie = new Label();
