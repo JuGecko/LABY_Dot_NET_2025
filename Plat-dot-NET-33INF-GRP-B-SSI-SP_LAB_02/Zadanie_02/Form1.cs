@@ -63,19 +63,32 @@ namespace Zadanie_02
                 }
                 result_textBox.Text = "" + result;
                 textBoxBinary.Text = ConvertToBinary((int)result);
+                textBoxHexadecimal.Text = ConvertToHex((int)result);
+                textBoxOctadecimal.Text = ConvertToOct((int)result);
             }
             else
             {
                 result_textBox.Text = ""; // Clear result if input is invalid
                 textBoxBinary.Text = ""; // Clear binary result
+                textBoxHexadecimal.Text = "";
+                textBoxOctadecimal.Text = "";
             }
-         
+
         }
         private string ConvertToBinary(int number)
         {
             return Convert.ToString(number, 2); // Convert to binary string
         }
 
+        private string ConvertToHex(int number)
+        {
+            return Convert.ToString(number, 16).ToUpper();
+        }
+
+        private string ConvertToOct(int number)
+        {
+            return Convert.ToString(number, 8);
+        }
 
 
 
@@ -85,21 +98,41 @@ namespace Zadanie_02
         private ComboBox operationChoice;
 
 
-        private void result_textBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        //rowna sie (wynik)
         private void rowna_sie_Click(object sender, EventArgs e)
         {
 
         }
+        private void result_textBox_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+        
+        //zamiana binarna
+        private void labelBinary_Click(object sender, EventArgs e){
+        
+        }
         private void textBoxBinary_TextChanged(object sender, EventArgs e)
         {
 
         }
+        
+        //zamiana heksadecymalna
+        private void labelHexadecimal_Click(object sender, EventArgs e)
+        {
 
-        private void labelBinary_Click(object sender, EventArgs e)
+        }
+        private void textBoxHexadecimal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        // zamiana oktodecymalna
+        private void labelOctadecimal_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void textBoxOctadecimal_TextChanged(object sender, EventArgs e)
         {
 
         }

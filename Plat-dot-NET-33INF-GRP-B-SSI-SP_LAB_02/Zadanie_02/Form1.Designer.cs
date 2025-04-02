@@ -38,6 +38,10 @@ namespace Zadanie_02
             rowna_sie = new Label();
             textBoxBinary = new TextBox();
             labelBinary = new Label();
+            textBoxHexadecimal = new TextBox();
+            textBoxOctadecimal = new TextBox();
+            labelHexadecimal = new Label();
+            labelOctadecimal = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -107,11 +111,53 @@ namespace Zadanie_02
             labelBinary.Text = "binarnie:";
             labelBinary.Click += labelBinary_Click;
             // 
+            // textBoxHexadecimal
+            // 
+            textBoxHexadecimal.Font = new Font("Yu Gothic Medium", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            textBoxHexadecimal.Location = new Point(445, 211);
+            textBoxHexadecimal.Name = "textBoxHexadecimal";
+            textBoxHexadecimal.Size = new Size(202, 44);
+            textBoxHexadecimal.TabIndex = 9;
+            textBoxHexadecimal.TextChanged += textBoxHexadecimal_TextChanged;
+            // 
+            // textBoxOctadecimal
+            // 
+            textBoxOctadecimal.Font = new Font("Yu Gothic Medium", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            textBoxOctadecimal.Location = new Point(445, 280);
+            textBoxOctadecimal.Name = "textBoxOctadecimal";
+            textBoxOctadecimal.Size = new Size(202, 44);
+            textBoxOctadecimal.TabIndex = 10;
+            textBoxOctadecimal.TextChanged += textBoxOctadecimal_TextChanged;
+            // 
+            // labelHexadecimal
+            // 
+            labelHexadecimal.AutoSize = true;
+            labelHexadecimal.Location = new Point(303, 235);
+            labelHexadecimal.Name = "labelHexadecimal";
+            labelHexadecimal.Size = new Size(125, 20);
+            labelHexadecimal.TabIndex = 11;
+            labelHexadecimal.Text = "heksadecymalnie:";
+            labelHexadecimal.Click += labelHexadecimal_Click;
+            // 
+            // labelOctadecimal
+            // 
+            labelOctadecimal.AutoSize = true;
+            labelOctadecimal.Location = new Point(328, 304);
+            labelOctadecimal.Name = "labelOctadecimal";
+            labelOctadecimal.Size = new Size(100, 20);
+            labelOctadecimal.TabIndex = 12;
+            labelOctadecimal.Text = "oktogonalnie:";
+            labelOctadecimal.Click += labelOctadecimal_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(682, 276);
+            ClientSize = new Size(682, 354);
+            Controls.Add(labelOctadecimal);
+            Controls.Add(labelHexadecimal);
+            Controls.Add(textBoxOctadecimal);
+            Controls.Add(textBoxHexadecimal);
             Controls.Add(labelBinary);
             Controls.Add(textBoxBinary);
             Controls.Add(rowna_sie);
@@ -132,5 +178,9 @@ namespace Zadanie_02
         private Label rowna_sie;
         private TextBox textBoxBinary;
         private Label labelBinary;
+        private TextBox textBoxHexadecimal;
+        private TextBox textBoxOctadecimal;
+        private Label labelHexadecimal;
+        private Label labelOctadecimal;
     }
 }
