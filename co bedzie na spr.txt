@@ -1,0 +1,15 @@
+nie będzie rsa na sprawdzianie
+
+na pewno będzie 2 z listy 3, ale wariacja liter i znakow jako adresu ip (wyrażenia regularne)
+
+API - nazwy metod, kontruktory itp.
+
+
+
+
+
+LISTA 4
+pe.Graphics
+metody jakies z tego
+
+to na sprawdzianie! ale to na drugim spr
