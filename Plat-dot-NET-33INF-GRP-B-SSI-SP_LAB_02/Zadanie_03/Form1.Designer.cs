@@ -1,6 +1,4 @@
-﻿//program, który zaprezentuje możliwości klasy MessageBox (a dokładniej metody Show) z przestrzeni System.Windows
-//MessageBox
-namespace Zadanie_03
+﻿namespace Zadanie_03
 {
     partial class Form1
     {
@@ -22,8 +20,6 @@ namespace Zadanie_03
             base.Dispose(disposing);
         }
 
-
-
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -32,81 +28,61 @@ namespace Zadanie_03
         /// </summary>
         private void InitializeComponent()
         {
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton4 = new RadioButton();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
-            // radioButton1
+            // button1
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(71, 54);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(63, 19);
-            radioButton1.TabIndex = 1;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "opcja 1";
-            radioButton1.UseVisualStyleBackColor = true;
-            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
+            button1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic);
+            button1.Location = new Point(157, 45);
+            button1.Name = "button1";
+            button1.Size = new Size(135, 44);
+            button1.TabIndex = 0;
+            button1.Text = "Informacja";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // radioButton2
+            // button2
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(71, 101);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(63, 19);
-            radioButton2.TabIndex = 2;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "opcja 2";
-            radioButton2.UseVisualStyleBackColor = true;
-            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
+            button2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic);
+            button2.Location = new Point(26, 105);
+            button2.Name = "button2";
+            button2.Size = new Size(136, 42);
+            button2.TabIndex = 1;
+            button2.Text = "Ostrzezenie";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
-            // radioButton3
+            // button3
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(71, 148);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(63, 19);
-            radioButton3.TabIndex = 4;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "opcja 3";
-            radioButton3.UseVisualStyleBackColor = true;
-            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
-            // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(71, 196);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(63, 19);
-            radioButton4.TabIndex = 3;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "opcja 4";
-            radioButton4.UseVisualStyleBackColor = true;
-            radioButton4.CheckedChanged += radioButton4_CheckedChanged;
+            button3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic);
+            button3.Location = new Point(285, 105);
+            button3.Name = "button3";
+            button3.Size = new Size(136, 42);
+            button3.TabIndex = 2;
+            button3.Text = "Decyzja";
+            button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(640, 282);
-            Controls.Add(radioButton3);
-            Controls.Add(radioButton4);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
+            BackColor = SystemColors.AppWorkspace;
+            ClientSize = new Size(455, 191);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton3;
-        private RadioButton radioButton4;
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
-
 }
