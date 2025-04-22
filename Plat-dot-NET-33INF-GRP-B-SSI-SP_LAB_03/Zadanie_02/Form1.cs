@@ -1,6 +1,8 @@
 //podaæ program dla konsoli do weryfikacji adresu IP w formacie:
 //XXX.XXX.XXX.XXX,
 //gdzie X to cyfra oraz e-mail za pomoc¹ wyra¿enia regularnego.
+using System.Text.RegularExpressions;
+
 namespace Zadanie_02
 {
     public partial class Form1 : Form
@@ -58,11 +60,39 @@ namespace Zadanie_02
         //email
         private void textBoxE_TextChanged(object sender, EventArgs e)
         {
+            if (checkEmail(textBoxE.Text))
+            {
+                textBoxE.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBoxE.BackColor = Color.Red;
+            }
         }
 
+        private bool checkEmail(string email)
+        {
+            try
+            {
+                // Wyra¿enie regularne do walidacji adresu e-mail
+                var emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+                return Regex.IsMatch(email, emailPattern);
+            }
+            catch
+            {
+                return false;
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (checkEmail(textBoxE.Text))
+            {
+                MessageBox.Show("Adres e-mail jest poprawny.", "Weryfikacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Adres e-mail jest niepoprawny. Poprawny format to: example@domain.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
