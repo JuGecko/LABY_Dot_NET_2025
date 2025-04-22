@@ -6,10 +6,10 @@ API - nazwy metod, kontruktory itp.
 
 
 
-
+////////// drugi sprawdzian
 
 LISTA 4
 pe.Graphics
 metody jakies z tego
 
-to na sprawdzianie! ale to na drugim spr
+to na sprawdzianie! ale to na drugim spr!
