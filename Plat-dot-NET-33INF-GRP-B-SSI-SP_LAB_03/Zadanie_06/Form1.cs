@@ -1,4 +1,4 @@
-namespace Zadanie05
+namespace Zadanie_06
 {
     public partial class Form1 : Form
     {

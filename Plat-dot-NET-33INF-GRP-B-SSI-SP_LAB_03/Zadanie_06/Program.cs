@@ -1,4 +1,4 @@
-namespace Zadanie05
+namespace Zadanie_06
 {
     internal static class Program
     {
